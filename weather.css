@@ -1,0 +1,42 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+:root {
+    --pri-clr: skyblue;
+    --sdn-clr: springgreen;
+
+}
+
+#container {
+    width: 900px;
+    height: 600px;
+    background-color: var(--sdn-clr);
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--pri-clr);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.top .left {
+    width: 45%;
+    height: 200px;
+    background-color: burlywood;
+    margin-right: 5px;
+}
+
+.top .right {
+    width: 45%;
+    height: 200px;
+    background-color: violet;
+
+}

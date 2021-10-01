@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+    <div id="container">
+        <div class="top">
+            <div class="left"></div>
+            <div class="right">
+                <h3>Timezone:</h3>
+                <h3 id="timezone"></h3>
+                <br/>
+                <h3>Humidity:</h3>
+                <h3 id="humidity"></h3>
+                <br/>
+                <h3>Windspeed:</h3>
+                <h3 id="windspeed"></h3>
+                <br/>
+                <h3>Pressure:</h3>
+                <h3 id="pressure"></h3>
+            </div>
+        </div>
+    </div>
+    <button onclick="currentApi ('Kuala Lumpur')">Johor</button>
+    <button onclick="currentApi ('Pulau Pinang')">Penang</button>
+    <button onclick="currentApi ('Sabah')">Sabah</button>
+    <button onclick="currentApi ('Serawak')">Serawak</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+    <script src="weather.js"></script>
+</body>
+</html>
