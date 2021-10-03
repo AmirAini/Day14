@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    < 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Display</title>
 
     <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
+<body onload="time()">
     <div id="container">
-
         <div id="section1">
-
             <div id="body-left">
-
-                <h1> Today's Weather In:</h1> 
                 <h2 id="city-name">Kuala Lumpur</h2> 
-
+                <h2 id="day">Today's Day</h1>
+                <h2 class='date'>Today's Date</h2>
+                <h2 id='time'>Time</h2>
                 <div><img class="weather-icon"/></div>
-
-
+            </div>
+            <div id="body-right">
                 <h2>Temperature: </h2>
                 <h3 id="temperature"></h3>
                 <h2>Wind Speed: </h2>
@@ -29,85 +26,109 @@
                 <h3 id="pressure"></h3>
                 <h2>Humidity: </h2>
                 <h3 id="humidity"></h3>
-
-                <button onclick="changeCity('Kuala Lumpur')">Kuala Lumpur</button>
-                <button onclick="changeCity('Hong Kong')">Hong Kong</button>
-                <button onclick="changeCity('London')">London</button>
-                <button onclick="changeCity('Johor Bahru')">Johor Bahru</button>
-                <button onclick="changeCity('Beijing')">Beijing</button>
-                <button onclick="changeCity('New York City')">New York City</button>
             </div>
         </div>
-        <div id="section2">
-            <h1>Week's Forecast:</h1>
-            <!-- <h2 id="city-name"></h2> -->
 
-            <div id="box-holder">
-                <div><img class="weather-icon"/></div>
-                <div class="info">
-                    Day1
-                    <h2>Temperature: </h2>
-                    <h3 id="temperature1"></h3>
-                    <h2>Wind Speed: </h2>
-                    <h3 id="wind-speed1"></h3>
-                    <h2>Pressure: </h2>
-                    <h3 id="pressure1"></h3>
-                    <h2>Humidity: </h2>
-                    <h3 id="humidity1"></h3>
-                </div>
-
-                <div class="info">
-                    Day2
-                    <h2>Temperature: </h2>
-                    <h3 id="temperature2"></h3>
-                    <h2>Wind Speed: </h2>
-                    <h3 id="wind-speed2"></h3>
-                    <h2>Pressure: </h2>
-                    <h3 id="pressure2"></h3>
-                    <h2>Humidity: </h2>
-                    <h3 id="humidity2"></h3>
-                </div>
-
-                <div class="info">
-                    Day3
-                    <h2>Temperature: </h2>
-                    <h3 id="temperature3"></h3>
-                    <h2>Wind Speed: </h2>
-                    <h3 id="wind-speed3"></h3>
-                    <h2>Pressure: </h2>
-                    <h3 id="pressure3"></h3>
-                    <h2>Humidity: </h2>
-                    <h3 id="humidity3"></h3>
-                </div>
-
-                <div class="info">
-                    Day4
-                    <h2>Temperature: </h2>
-                    <h3 id="temperature4"></h3>
-                    <h2>Wind Speed: </h2>
-                    <h3 id="wind-speed4"></h3>
-                    <h2>Pressure: </h2>
-                    <h3 id="pressure4"></h3>
-                    <h2>Humidity: </h2>
-                    <h3 id="humidity4"></h3>
-                </div>
-
-                <div class="info">
-                    Day5
-                    <h2>Temperature: </h2>
-                    <h3 id="temperature5"></h3>
-                    <h2>Wind Speed: </h2>
-                    <h3 id="wind-speed5"></h3>
-                    <h2>Pressure: </h2>
-                    <h3 id="pressure5"></h3>
-                    <h2>Humidity: </h2>
-                    <h3 id="humidity5"></h3>
-                </div>
-            </div>
+        <div id="button">
+            <h2> Check Other Locations</h2>
         </div>
-    </div>
+            
 
-    <script src="script.js"></script>
+        
     
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+<!-- <h1> Today's Weather In:</h1> 
+<h2 id="city-name">Kuala Lumpur</h2> 
+
+
+<button onclick="changeCity('Kuala Lumpur')">Kuala Lumpur</button>
+<button onclick="changeCity('Hong Kong')">Hong Kong</button>
+<button onclick="changeCity('London')">London</button>
+<button onclick="changeCity('Johor Bahru')">Johor Bahru</button>
+<button onclick="changeCity('Beijing')">Beijing</button>
+<button onclick="changeCity('New York City')">New York City</button>
+</div>
+</div>
+<div id="section2">
+<div class="box-holder">
+<div><img class="weather-icon"/></div>
+<h1>Week's Forecast </h>
+<div class="info">
+    Day1
+    <h2>Temperature: </h2>
+    <h3 id="temperature"></h3>
+    <h2>Wind Speed: </h2>
+    <h3 id="wind-speed"></h3>
+    <h2>Pressure: </h2>
+    <h3 id="pressure"></h3>
+    <h2>Humidity: </h2>
+    <h3 id="humidity"></h3>
+</div>
+
+<div class="info">
+    Day2
+    <h2>Temperature: </h2>
+    <h3 id="temperature"></h3>
+    <h2>Wind Speed: </h2>
+    <h3 id="wind-speed"></h3>
+    <h2>Pressure: </h2>
+    <h3 id="pressure"></h3>
+    <h2>Humidity: </h2>
+    <h3 id="humidity"></h3>
+</div>
+
+<div class="info">
+    Day3
+    <h2>Temperature: </h2>
+    <h3 id="temperature"></h3>
+    <h2>Wind Speed: </h2>
+    <h3 id="wind-speed"></h3>
+    <h2>Pressure: </h2>
+    <h3 id="pressure"></h3>
+    <h2>Humidity: </h2>
+    <h3 id="humidity"></h3>
+</div>
+
+<div class="info">
+    Day4
+    <h2>Temperature: </h2>
+    <h3 id="temperature"></h3>
+    <h2>Wind Speed: </h2>
+    <h3 id="wind-speed"></h3>
+    <h2>Pressure: </h2>
+    <h3 id="pressure"></h3>
+    <h2>Humidity: </h2>
+    <h3 id="humidity"></h3>
+</div>
+
+<div class="info">
+    Day5
+    <h2>Temperature: </h2>
+    <h3 id="temperature"></h3>
+    <h2>Wind Speed: </h2>
+    <h3 id="wind-speed"></h3>
+    <h2>Pressure: </h2>
+    <h3 id="pressure"></h3>
+    <h2>Humidity: </h2>
+    <h3 id="humidity"></h3>
+</div>
+</div>
+</div>
+</div>
+

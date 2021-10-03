@@ -6,16 +6,16 @@
     --tri-clr: white;
     --quad-clr: black;
     --title-size: 30px;
-    --subtitle-size:24px;
+    --subtitle-size:22px;
     --nor-size: 18px;
 }
 
 #container {
     width: 900px;
-    height: 900px;
-    background-color: var(--pri-clr);
+    height: 1100px;
+    background-color: var(--quad-clr);
     margin: 0 auto;
-    padding: 10px;
+    padding: 25px;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
@@ -26,54 +26,88 @@
 h1 {
     font-size: var(--title-size);
     color: var(--tri-clr);
+    margin: 0 5px;
 
 }
 
 h2 {
     font-size: var(--subtitle-size);
     color: var(--tri-clr);
+    margin: 0 5px;
 }
 
 h3 {
     font-size: var(--nor-size);
     color: var(--tri-clr);
+    margin: 0 5px;
 }
 
 #section1 {
     width: 100%;
-    height: 500px;
+    height: 220px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #body-left {
-    width: 100%;
-    border: 1px solid black;
+    background-color: var(--pri-clr);
+    width: 50%;
+    height: 200px;
     margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+#body-right {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pri-clr);
+
+}
+
+#buttons {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: var(--sdn-clr);
+    border-radius: 10px;
+}
+
+#buttons h2 {
+    color: var(--quad-clr);
 }
 
 #section2 {
+    margin-top: 10px;
     width: 100%;
-    border: 1px solid black;
+    color: var(--quad-clr);
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;    
+    align-items: center;    
 }
 
 .box-holder {
-    width: 200px;
-    height: 400px;
-    background-color: lightgreen;
+    width: 100%;
+    height: 150px;
+    background-color: var(--sdn-clr);
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .info {
