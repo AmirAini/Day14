@@ -160,13 +160,6 @@ function callAPI(pos){
     humidity5.textContent = `Humidity: ${data.daily[5].humidity} %`;
 
 
-
-
-
-
-
-
-
 })
 }
 
@@ -194,6 +187,8 @@ function changeCity(city) {
     let icon = data.weather[0].icon;
     windSpeedEle.innerHTML = data.wind.speed + ' m/s';
     locationIcon.src=`openweathermap-api-icons-master/icons/${icon}.png`; 
+    
+    var dateTime = moment().utc(data.dt).format('MMMM Do YYYY, h:mm:ss a');
 
     console.log(data.wind.speed);
 
@@ -218,18 +213,23 @@ function changeCity(city) {
 }
 
 //!Time
-
+//start
 changeCity("Kuala Lumpur");
+
+//target
 var day = document.getElementById("day");
 var date = document.getElementById("date");
 var time = document.getElementById("time");
 
+//show
 function getDateTime(){
-    day.innerHTML = moment().utc(data.dt).format('dddd');
+    day.innerHTML = moment().format('dddd');
     date.innerHTML = moment().format("MMM Do YYYY");
     time.innerHTML = moment().format('h:mm a');
+
 }
 
+//now time
 setInterval(updateTime, 6000);
 
 function updateTime(){
