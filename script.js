@@ -217,14 +217,12 @@ function changeCity(city) {
 changeCity("Kuala Lumpur");
 
 //target
-var day = document.getElementById("day");
-var date = document.getElementById("date");
-var time = document.getElementById("time");
+let day = document.getElementById("day");
+let time = document.getElementById("time");
 
 //show
-function getDateTime(){
+function getTime(){
     day.innerHTML = moment().format('dddd');
-    date.innerHTML = moment().format("MMM Do YYYY");
     time.innerHTML = moment().format('h:mm a');
 
 }
