@@ -219,22 +219,15 @@ function changeCity(city) {
 
 //!Time
 
-
-
 changeCity("Kuala Lumpur");
-
-
-
 var day = document.getElementById("day");
 var date = document.getElementById("date");
 var time = document.getElementById("time");
 
 function getDateTime(){
-    day.innerHTML = moment().format('dddd');
+    day.innerHTML = moment().utc(data.dt).format('dddd');
     date.innerHTML = moment().format("MMM Do YYYY");
     time.innerHTML = moment().format('h:mm a');
-
-    
 }
 
 setInterval(updateTime, 6000);
